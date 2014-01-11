@@ -1,0 +1,38 @@
+/*
+somo plugin
+http://wordpress.org/plugins/somo/
+*/
+
+/* default styles for [pagelist], [subpages], [siblings] */
+.somo .current_page_item > a {
+	font-weight: bold; /* hilite active item */
+}
+
+/* default styles for [pagelist_ext] */
+.somo-ext {
+	clear: both;
+}
+/* clearfix-hack */
+.somo-ext {
+	*zoom: 1;
+}
+.somo-ext:before, .somo-ext:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.somo-ext:after {
+	clear: both;
+}
+.somo-ext .somo-ext-item {
+	clear: both;
+	margin: 10px 0 30px 0;
+}
+.somo-ext .somo-ext-image {
+	float: left;
+	display: inline;
+	margin: 5px 15px 15px 0;
+}
+.somo-ext .somo-ext-title {
+	clear: none;
+}
